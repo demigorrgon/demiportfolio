@@ -1,13 +1,16 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <portfolio-navbar />
+    <router-view />
   </div>
 </template>
+<script>
+import PortfolioNavbar from "@/components/PortfolioNavbar.vue";
 
+export default {
+  components: { PortfolioNavbar },
+};
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
