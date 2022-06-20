@@ -1,10 +1,5 @@
 <template>
-  <v-footer
-    v-bind="localAttrs"
-    :padless="padless"
-    :dark="true"
-    :absolute="isAbsolute"
-  >
+  <v-footer :dark="true" :absolute="isAbsolute" style="margin-top: 20px;">
     <vs-row>
       <vs-col class="logo-wrapper" w="4" style="border: 1px solid red">
         <p class="logo">
@@ -45,7 +40,10 @@
             ><p>
               <router-link to="/contact" class="repo-link"
                 >Contact me</router-link
-              >
+              ><br /><p style="font-size:12px;">UI broke down on your device? Open up
+              <a href="https://github.com/demigorrgon/demiportfolio/issues"
+                >an issue</a
+              ></p>
             </p></vs-col
           >
           <vs-col w="2" offset="2"
@@ -74,7 +72,7 @@ a {
 }
 a:hover {
   text-decoration: underline;
-  color: blue;
+  color: red;
 }
 .logo {
   font-family: "Courier New", Courier, monospace;
