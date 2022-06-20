@@ -2,13 +2,15 @@
   <div id="app">
     <portfolio-navbar />
     <router-view />
+    <portfolio-footer />
   </div>
 </template>
 <script>
 import PortfolioNavbar from "@/components/PortfolioNavbar.vue";
+import PortfolioFooter from "./components/PortfolioFooter.vue";
 
 export default {
-  components: { PortfolioNavbar },
+  components: { PortfolioNavbar, PortfolioFooter },
 };
 </script>
 <style>
