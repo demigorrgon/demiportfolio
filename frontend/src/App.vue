@@ -3,7 +3,10 @@
     <portfolio-navbar />
 
     <router-view />
-    <portfolio-footer :isAbsolute="false" v-if="this.$route.path === '/'" />
+    <portfolio-footer
+      :isAbsolute="false"
+      v-if="this.$route.path === '/' || this.$route.path === '/contact'"
+    />
     <portfolio-footer :isAbsolute="true" v-else />
   </div>
 </template>
