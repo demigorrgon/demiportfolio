@@ -7,18 +7,33 @@
     </p>
 
     <project-item
-      title="some cool project idk"
+      title="El-shopperino"
       techStackUsed="Backend: Django/Django Rest Framework, PostgreSQL. Frontend: VueJS, Vuex. Styling: Vuesax 3. Containerized with Docker"
-      description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime vero, adipisci exercitationem quis velit aliquid, reprehenderit, perferendis quam dignissimos corporis facere tempora magnam! Quam aspernatur quos reprehenderit velit vero provident rerum asperiores, illo cumque. Aspernatur at minima odio sed ullam cumque aperiam impedit corporis accusamus. Delectus cupiditate nam quisquam fuga sapiente ipsa minima consequatur repellendus, animi voluptatem quas, aspernatur nesciunt possimus. Corporis nihil at totam voluptas quod iure quisquam non, illum voluptates itaque cum ipsum maxime vero quas vel ratione? Corrupti facilis doloribus reiciendis harum odit molestias possimus suscipit. Animi, recusandae enim iure ex placeat sapiente et libero officiis."
+      description="E-commerce website with goblin's head on logo. What could go wrong?"
       pictureName="github-pic.png"
-      :featuresArray="['asd', 'qwe']"
+      :featuresArray="[
+        'REST API',
+        'JWT authorization',
+        'Product cart',
+        'Favorite products',
+        'Ordering proccess',
+        'Permission based product creation (like a worker)',
+        'TODO: add a map on frontend where user can pick a location where he wants the stuff to be delivered to',
+      ]"
     />
+
     <project-item
-      title="some"
+      title="IJRA"
       techStackUsed="Backend: Vanilla Flask, PostgreSQL. Frontend: VueJS, Vuex. Styling: Vuesax 3. Containerized with Docker"
-      description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime vero, adipisci exercitationem quis velit aliquid, reprehenderit, perferendis quam dignissimos corporis facere tempora magnam! Quam aspernatur quos reprehenderit velit vero provident rerum asperiores, illo cumque. Aspernatur at minima odio sed ullam cumque aperiam impedit corporis accusamus. Delectus cupiditate nam quisquam fuga sapiente ipsa minima consequatur repellendus, animi voluptatem quas, aspernatur nesciunt possimus. Corporis nihil at totam voluptas quod iure quisquam non, illum voluptates itaque cum ipsum maxime vero quas vel ratione? Corrupti facilis doloribus reiciendis harum odit molestias possimus suscipit. Animi, recusandae enim iure ex placeat sapiente et libero officiis."
+      description="Totally not a copy of JIRA. My take on making kanban board"
       pictureName="github-pic.png"
-      :featuresArray="['asd', 'qwe']"
+      :featuresArray="[
+        'REST API',
+        'JWT authorization',
+        'Basic CRUD operations with tasks',
+        'Persisted state',
+        'You can drag stuff',
+      ]"
       githubLink="https://github.com/demigorrgon/el-shopperino-dj-vue"
     />
   </div>
