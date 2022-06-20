@@ -5,10 +5,10 @@ import store from './store'
 import Vuesax from 'vuesax'
 import Unicon from 'vue-unicons/dist/vue-unicons-vue2.umd'
 import 'vuesax/dist/vuesax.css'
-import { uniGithub } from 'vue-unicons/dist/icons'
+import { uniDiscord, uniGithub, uniLinkedin, uniSkype, uniTelegram } from 'vue-unicons/dist/icons'
 import vuetify from './plugins/vuetify'
 
-Unicon.add([uniGithub])
+Unicon.add([uniGithub, uniTelegram, uniSkype, uniLinkedin, uniDiscord])
 
 Vue.config.productionTip = false
 Vue.use(Vuesax)
