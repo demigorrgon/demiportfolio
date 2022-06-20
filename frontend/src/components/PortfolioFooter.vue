@@ -36,8 +36,20 @@
               >
             </p>
           </vs-col>
-          <vs-col w="3" offset="1">Contact me</vs-col>
-          <vs-col w="3" offset="1">Personal roadmap</vs-col>
+          <vs-col w="2" offset="2"
+            ><p>
+              <router-link to="/contact" class="repo-link"
+                >Contact me</router-link
+              >
+            </p></vs-col
+          >
+          <vs-col w="2" offset="2"
+            ><p>
+              <router-link to="roadmap" class="repo-link"
+                >Personal roadmap</router-link
+              >
+            </p></vs-col
+          >
         </vs-row>
       </vs-col>
     </vs-row>
@@ -49,19 +61,6 @@ export default {};
 </script>
 
 <style scoped>
-/* footer {
-  position: sticky;
-  width: 100%;
-  display: flex;
-  left: 0;
-  bottom: 0;
-  padding: 0;
-  margin: 0px 10px 0px -10px;
-  background-color: black;
-  max-width: 100%;
-  overflow-x: hidden;
-  color: white;
-} */
 a {
   text-decoration: none;
   color: white;
