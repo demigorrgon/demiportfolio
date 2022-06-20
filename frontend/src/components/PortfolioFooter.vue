@@ -1,5 +1,10 @@
 <template>
-  <v-footer v-bind="localAttrs" :padless="padless" :dark="true">
+  <v-footer
+    v-bind="localAttrs"
+    :padless="padless"
+    :dark="true"
+    :absolute="isAbsolute"
+  >
     <vs-row>
       <vs-col class="logo-wrapper" w="4" style="border: 1px solid red">
         <p class="logo">
@@ -57,7 +62,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["isAbsolute"],
+};
 </script>
 
 <style scoped>

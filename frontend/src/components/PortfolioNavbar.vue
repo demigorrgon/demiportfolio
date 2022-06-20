@@ -10,20 +10,23 @@
           /> </vs-navbar-item
       ></template>
       <template #right>
-        <vs-navbar-item :active="active == 'home'" id="guide">
-          Home
+        <vs-navbar-item :active="active == 'home'" id="home">
+          <router-link to="/" class="navbar-item">Home</router-link>
         </vs-navbar-item>
-        <vs-navbar-item :active="active == 'docs'" id="docs">
-          Documents
+        <vs-navbar-item :active="active == 'contact-bio'" id="contact">
+          <router-link to="/contact#bio" class="navbar-item">Bio</router-link>
         </vs-navbar-item>
-        <vs-navbar-item :active="active == 'components'" id="components">
-          Components
+        <vs-navbar-item :active="active == 'contact'" id="contact">
+          <router-link to="/contact" class="navbar-item"
+            >Contact me</router-link
+          >
         </vs-navbar-item>
-        <vs-navbar-item :active="active == 'license'" id="license">
-          license
-        </vs-navbar-item></template
-      >
-      <!-- <template #right></template> -->
+        <vs-navbar-item :active="active == 'roadmap'" id="roadmap">
+          <router-link to="/roadmap" class="navbar-item"
+            >Dev roadmap</router-link
+          >
+        </vs-navbar-item>
+      </template>
     </vs-navbar>
   </div>
 </template>
@@ -37,12 +40,14 @@ export default {
 </script>
 
 <style>
-.peepologo {
-}
 .greet-pic {
   width: 20%;
 }
 .square {
   margin-top: 50px;
+}
+.navbar-item {
+  text-decoration: none;
+  color: azure;
 }
 </style>

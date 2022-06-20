@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <portfolio-navbar />
+
     <router-view />
-    <portfolio-footer />
+    <portfolio-footer :isAbsolute="false" v-if="this.$route.path === '/'" />
+    <portfolio-footer :isAbsolute="true" v-else />
   </div>
 </template>
 <script>
