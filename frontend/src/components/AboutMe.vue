@@ -28,7 +28,7 @@
 
           Seeking new opportunities as a dev and human being.
         </p>
-        <p style="margin-bottom: 1px">Get in touch:</p>
+        <p style="margin-bottom: 1px">Get in touch/Grab my CV:</p>
         <vs-button gradient @click="" color="#90ee90" style="margin: 0 auto">
           Contact
         </vs-button>
