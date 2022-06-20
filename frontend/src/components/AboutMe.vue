@@ -16,15 +16,17 @@
         /></a>
         <p>I'm Demigorrgon aka Valentyn Slivko</p>
         <p>
-          Python's backend web frameworks holy trinity (Django, Flask, FastAPI)
-          wielder, API enjoyer<br />
+          Python backend development enjoyer (Django/DRF, Flask).<br />
+          Working my way to become a python's backend holy trinity wielder (add
+          FastAPI to the list of frameworks that I'm comfortable with)
+          <br />
           Occasionally doing frontend stuff with VueJS. <br />Most of the time
           creating REST APIs and web services<br />
           Certified expert in gluing fingers together with a hot glue gun.
           <br />
           <br />
 
-          Seeking new opportunities.
+          Seeking new opportunities as a dev and human being.
         </p>
         <p style="margin-bottom: 1px">Get in touch:</p>
         <vs-button gradient @click="" color="#90ee90" style="margin: 0 auto">
