@@ -1,7 +1,7 @@
 <template>
   <div class="project">
     <vs-row>
-      <vs-col w="4" style="border: 1px solid red; margin-bottom: 20px">
+      <vs-col w="4" style="margin-bottom: 20px">
         <vs-card type="4" class="project-card">
           <template #title>
             <h3>{{ title }}</h3>
@@ -10,7 +10,7 @@
             <img :src="require('@/assets/' + pictureName)" alt="" />
           </template>
           <template #text>
-            <p>{{ techStackUsed }}</p>
+            <p class="card-description">{{ techStackUsed }}</p>
           </template>
           <template #interactions>
             <vs-button
@@ -26,18 +26,17 @@
           </template>
         </vs-card>
       </vs-col>
-      <vs-col w="7" offset="1" style="border: 1px solid red">
+      <vs-col w="7" offset="1" style="padding: 5px 10px 5px 10px;">
         <p>{{ title }}</p>
         <p class="project-description">{{ description }}</p>
         <div class="features">
           <p>Features:</p>
-          <ul
-            v-for="(item, idx) of featuresArray"
+          <div v-for="(item, idx) of featuresArray"
             :key="idx"
-            class="features-list"
-          >
-            <li>{{ item }}</li>
-          </ul>
+            class="features-list">
+          <p>{{ item }}</p>
+            </div>
+          </p>
         </div>
       </vs-col>
     </vs-row>
@@ -63,8 +62,11 @@ export default {
 </script>
 
 <style>
+.project {
+  margin-top: 50px;
+}
 .project-card {
-  margin-left: 100px;
+  margin-left: 330px;
 }
 
 .features-list {
@@ -74,5 +76,8 @@ export default {
 }
 .project-description {
   padding: 10px 30px 10px 30px;
+}
+.card-description {
+  color: black !important;
 }
 </style>

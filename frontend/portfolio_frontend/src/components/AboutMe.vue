@@ -8,13 +8,14 @@
         vs-justify="center"
         vs-align="center"
       >
-        <p>
-          <b><i>Welcome, wonderer</i></b>
-        </p>
+        <p style="font-size: 36px">Welcome, wonderer</p>
         <a href="https://github.com/demigorrgon" target="_blank"
-          ><img src="@/assets/github-pic.png" class="github-pic"
+          ><img
+            src="@/assets/github-pic.png"
+            class="github-pic"
+            title="Github Profile"
         /></a>
-        <p>I'm Demigorrgon aka Valentyn Slivko</p>
+        <p>I'm Valentyn Slivko aka demigorrgon</p>
         <p>
           Python backend development enjoyer (Django/DRF, Flask).<br />
           Working my way to become a python's backend holy trinity wielder (add
@@ -29,7 +30,12 @@
           Seeking new opportunities as a dev and human being.
         </p>
         <p style="margin-bottom: 1px">Get in touch/Grab my CV:</p>
-        <vs-button gradient @click="" color="#90ee90" style="margin: 0 auto">
+        <vs-button
+          size="large"
+          @click="$router.push('contact')"
+          color="success"
+          style="margin: 0 auto"
+        >
           Contact
         </vs-button>
       </vs-col>
@@ -38,22 +44,35 @@
 </template>
 
 <script>
-export default {};
+export default {
+  // methods: {
+  //   toContactPage() {
+  //     this.$routre
+  //   }
+  // }
+};
 </script>
 
 <style>
 .about-me {
   margin-top: 70px;
-  border: 1px solid red;
+}
+.about-me p {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 900;
+  font-size: 24px;
+  padding: 5px 3px 5px 3px;
+  color: antiquewhite;
 }
 .about-me-wrapper {
-  padding: 10px 10px 10px 10px;
+  margin-top: 13px;
+  padding: 30px 10px 10px 10px;
 }
 .github-pic {
   width: 5%;
   border-radius: 300px;
 }
-. {
+/* . {
   margin: 0 auto;
-}
+} */
 </style>

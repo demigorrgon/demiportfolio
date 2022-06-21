@@ -1,14 +1,9 @@
 <template>
   <div class="contact">
     <vs-row>
-      <vs-col w="3" offset="1" style="border: 1px solid red">
+      <vs-col w="3" offset="1" style="border-right: 2px solid gray">
         <vs-row>
-          <vs-col
-            w="6"
-            offset="3"
-            vs-align="center"
-            style="border: 1px solid red"
-          >
+          <vs-col w="6" offset="3" vs-align="center">
             <img
               class="face-pic"
               :src="require('@/assets/muh_face_somewhatok_edited_hair.png')"
@@ -25,27 +20,42 @@
           <vs-col>
             <p class="side-info">Email: demigorrgon@gmail.com</p>
           </vs-col>
+          <vs-col>
+            <p class="side-info">Age: Back hurts from time to time</p>
+          </vs-col>
           <vs-col vs-justify="center" class="icons">
             <vs-row>
               <vs-col w="1" offset="4" display="flex">
-                <unicon name="github"></unicon>
+                <a href="https://github.com/demigorrgon" target="_blank"
+                  ><unicon name="github"></unicon
+                ></a>
               </vs-col>
               <vs-col w="1">
-                <unicon name="telegram"></unicon>
+                <a href="https://t.me/demigorrrgon" target="_blank"
+                  ><unicon name="telegram"></unicon
+                ></a>
               </vs-col>
               <vs-col w="1">
-                <unicon name="skype"></unicon>
+                <a href="#"><unicon name="skype"></unicon></a>
               </vs-col>
               <vs-col w="1">
-                <unicon name="linkedin"></unicon>
+                <a
+                  href="https://www.linkedin.com/in/demigorrgon/"
+                  target="_blank"
+                  ><unicon name="linkedin"></unicon
+                ></a>
               </vs-col>
             </vs-row>
+            <vs-col style="margin-top: 15px">
+              <vs-button warn gradient style="margin: 0 auto">
+                Export as pdf
+              </vs-button>
+            </vs-col>
           </vs-col>
         </vs-row>
       </vs-col>
-      <vs-col w="7" offset="1" style="border: 1px solid red">
+      <vs-col w="7" offset="1">
         <vs-col
-          style="border: 1px solid red"
           w="8"
           class="cv-description"
           vs-type="flex"
@@ -74,7 +84,12 @@
           <ul>
             <li>Ukrainian - native</li>
             <li>
-              English - <a href="https://www.efset.org/cert/AjUBNV">low C2</a>
+              English -
+              <a
+                href="https://www.efset.org/cert/AjUBNV"
+                title="Link to certificate"
+                >low C2</a
+              >
             </li>
             <li>Russian - sadly also native</li>
           </ul>
@@ -150,7 +165,7 @@ export default {};
 
 <style>
 .contact {
-  margin-top: 70px;
+  margin-top: 100px;
 }
 .face-pic {
   width: 80%;
@@ -190,6 +205,9 @@ ul {
 }
 .monkaHmm {
   width: 100%;
+}
+.external-links {
+  margin-bottom: 30px;
 }
 .external-links a {
   text-decoration: none;

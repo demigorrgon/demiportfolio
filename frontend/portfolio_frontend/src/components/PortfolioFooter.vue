@@ -1,7 +1,7 @@
 <template>
-  <v-footer :dark="true" :absolute="isAbsolute" style="margin-top: 20px;">
+  <v-footer :dark="true" :absolute="isAbsolute">
     <vs-row>
-      <vs-col class="logo-wrapper" w="4" style="border: 1px solid red">
+      <vs-col class="logo-wrapper" w="4">
         <p class="logo">
           <a
             class="logo-link"
@@ -15,10 +15,9 @@
         class="info-wrapper"
         w="7"
         offset="1"
-        style="border: 1px solid red"
       >
         <vs-row>
-          <vs-col w="3" offset="1" style="border: 1px solid red">
+          <vs-col w="3" offset="1">
             <a
               class="repo-link"
               href="https://github.com/demigorrgon/demiportfolio"
@@ -47,7 +46,7 @@
             </p></vs-col
           >
           <vs-col w="2" offset="2"
-            ><p>
+            ><p style="margin-top:15px;">
               <router-link to="roadmap" class="repo-link"
                 >Personal roadmap</router-link
               >
@@ -81,11 +80,11 @@ a:hover {
   font-style: italic;
 }
 .logo-wrapper {
-  margin-top: 30px;
+  margin-top: 10px;
   padding: 10px 10px 10px 10px;
 }
 .info-wrapper {
-  margin-top: 30px;
+  margin-top: 10px;
   padding: 10px 10px 10px 10px;
 }
 .logo-link {
