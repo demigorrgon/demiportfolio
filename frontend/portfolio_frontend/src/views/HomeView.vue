@@ -23,7 +23,7 @@
       techStackUsed="Backend: Django/Django Rest Framework, PostgreSQL. Frontend: VueJS, Vuex. Styling: Vuesax 3. Containerized with Docker"
       description="E-commerce website with goblin's head on logo. What could go wrong?"
       pictureName="goblin-head.png"
-      link="https://github.com/demigorrgon/el-shopperino-dj-vue"
+      endpoint="el_shopperino"
       :featuresArray="[
         'REST API',
         'JWT authentication',
@@ -39,8 +39,9 @@
       title="IJRA"
       techStackUsed="Backend: Vanilla Flask, PostgreSQL. Frontend: VueJS, Vuex. Styling: Vuesax 3. Containerized with Docker"
       description="Totally not a copy of JIRA. Heavily inspired by ifuckinghatejira.com to make someone's life miserable"
-      pictureName="github-pic.png"
-      link=""
+      pictureName="ijra.jpg"
+      endpoint="ijra"
+      githubLink="https://github.com/demigorrgon/ijra"
       :featuresArray="[
         'REST API',
         'JWT authentication',
@@ -48,21 +49,20 @@
         'Persisted state',
         'You can drag stuff',
       ]"
-      githubLink="https://github.com/demigorrgon/el-shopperino-dj-vue"
     />
     <project-item
       title="Twitter clone"
       techStackUsed="Backend: Django/Django Rest Framework, sqlite. Frontend: VanillaJS."
       description="One of the first projects ever done with DRF. Frontend in this project needs some love (refactoring with frameworks)"
       pictureName="twitter.png"
-      link=""
+      endpoint="twitter"
+      githubLink="https://github.com/demigorrgon/twitter_clone_django"
       :featuresArray="[
         'REST API',
         'Session authentication',
         'All the usual twitter stuff:',
         'Likes, tweets, retweets, followers',
       ]"
-      githubLink="https://github.com/demigorrgon/twitter_clone_django"
     />
   </div>
 </template>
