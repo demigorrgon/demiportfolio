@@ -14,6 +14,13 @@ RUN npm run build
 # CMD ["npm", "run", "serve"]
 # EXPOSE 8080
 
+
+WORKDIR /app/el_shopperino
+COPY frontend/ijra_frontend/package*.json ./
+RUN npm install
+COPY frontend/ijra_frontend/ .
+RUN npm run build
+
 FROM nginx:alpine
 WORKDIR /usr/share/nginx/html/portfolio
 RUN rm -rf ./*
