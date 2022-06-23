@@ -2,15 +2,15 @@
   <div class="project">
     <vs-row>
       <vs-col w="4" style="margin-bottom: 20px">
-        <vs-card type="4" class="project-card">
+        <vs-card type="4" class="project-card" >
           <template #title>
             <h3>{{ title }}</h3>
           </template>
-          <template #img>
-            <img :src="require('@/assets/' + pictureName)" alt="" />
+          <template #img >
+            <img :src="require('@/assets/' + pictureName)" alt="" @click="changeEndpoint(endpoint)"/>
           </template>
           <template #text>
-            <p class="card-description">{{ techStackUsed }}</p>
+            <p class="card-description" @click="changeEndpoint(endpoint)">{{ techStackUsed }}</p>
           </template>
           <template #interactions>
             <vs-button
@@ -50,12 +50,13 @@ export default {
     "techStackUsed",
     "description",
     "pictureName",
+    "endpoint",
     "featuresArray",
     "githubLink",
   ],
   methods: {
-    goToGithubRepo() {
-      window.open(url, "_blank").focus();
+    changeEndpoint(endpoint) {
+      window.open(`/${endpoint}/`, "_blank").focus();
     },
   },
 };
