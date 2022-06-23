@@ -1,5 +1,5 @@
-from ijra import ma
-from ijra.models import AuthUser, ToDoAction, Category
+from . import ma
+from .models import AuthUser, ToDoAction, Category
 from marshmallow_sqlalchemy import auto_field
 
 

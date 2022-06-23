@@ -1,4 +1,4 @@
-from ijra import create_app
+from app.ijra import create_app
 
 app = create_app()
 

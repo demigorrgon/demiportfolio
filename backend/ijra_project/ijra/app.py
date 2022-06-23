@@ -1,10 +1,10 @@
-from ijra import jwt, db
-from ijra.models import (
+from . import jwt, db
+from ..models import (
     AuthUser,
     Category,
     ToDoAction,
 )
-from ijra.serializers import (
+from ..serializers import (
     user_schema,
     category_schema,
     categories_schema,

@@ -1,4 +1,4 @@
-from ijra import db, bcrypt
+from . import db, bcrypt
 import datetime
 
 
