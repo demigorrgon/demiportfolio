@@ -96,7 +96,7 @@ DATABASES = {
         "NAME": "el_shopperinodb",
         "USER": os.getenv("POSTGRES_USER"),
         "PASSWORD": os.getenv("POSTGRES_PASSWORD"),
-        "HOST": "el_shopperinodb",
+        "HOST": "postgresdb",
         "PORT": "5432",
     }
 }
