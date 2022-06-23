@@ -15,19 +15,24 @@ RUN npm run build
 # EXPOSE 8080
 
 
-WORKDIR /app/el_shopperino
-COPY frontend/ijra_frontend/package*.json ./
+WORKDIR /app/ijra
+COPY frontend/frontend-ijra/package*.json ./
 RUN npm install
-COPY frontend/ijra_frontend/ .
+COPY frontend/frontend-ijra/ .
 RUN npm run build
 
-FROM nginx:alpine
-WORKDIR /usr/share/nginx/html/portfolio
-RUN rm -rf ./*
-COPY --from=builder /app/portfolio/dist .
+# FROM nginx:alpine
+# WORKDIR /usr/share/nginx/html/portfolio
+# RUN rm -rf ./*
+# COPY --from=builder /app/portfolio/dist .
 
-WORKDIR /usr/share/nginx/html/el_shopperino
-RUN rm -rf ./*
-COPY --from=builder /app/el_shopperino/dist .
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+
+# WORKDIR /usr/share/nginx/html/ijra
+# RUN rm -rf ./*
+# COPY --from=builder /app/ijra/dist .
+
+# WORKDIR /usr/share/nginx/html/el_shopperino
+# RUN rm -rf ./*
+# COPY --from=builder /app/el_shopperino/dist .
+# EXPOSE 80
+# CMD ["nginx", "-g", "daemon off;"]
