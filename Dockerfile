@@ -13,4 +13,7 @@ WORKDIR /usr/share/nginx/html/el_shopperino
 RUN rm -rf ./*
 COPY --from=builder /app/el_shopperino/dist .
 EXPOSE 80
+
+RUN mkdir /usr/share/nginx/html/twitter
+RUN chown root:root -R /usr/share/nginx/html/twitter/
 CMD ["nginx", "-g", "daemon off;"]
