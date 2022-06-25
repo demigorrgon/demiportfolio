@@ -24,6 +24,7 @@
       description="E-commerce website with goblin's head on logo. What could go wrong?"
       pictureName="goblin-head.png"
       endpoint="el_shopperino"
+      githubLink="https://github.com/demigorrgon/el-shopperino-dj-vue"
       :featuresArray="[
         'REST API',
         'JWT authentication',
