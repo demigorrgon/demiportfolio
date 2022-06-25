@@ -22,7 +22,7 @@
 <h1 class="text-center" id="tweetsh1"> Actual tweets </h1>
 <div class="row mb-20">
     <div class="col-md-4 mx-auto col-10">
-        <form class="form" id="tweet-create-form" method="post" , action="/api/tweets/create/">
+        <form class="form" id="tweet-create-form" method="post" , action="http://localhost/twitter/api/tweets/create/">
             {% csrf_token %}
             <div class="d-none alert alert-danger" id="tweet-create-form-error"></div>
             <input type="hidden" name="next" value="/" />
@@ -37,7 +37,7 @@
 <div id="tweets">
     <div class="col">
         <div class="col-md-4 mx-auto col-10">
-            Kek
+            Static files aren't loaded yet...
         </div>
 
     </div>

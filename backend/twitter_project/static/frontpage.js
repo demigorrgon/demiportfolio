@@ -41,7 +41,7 @@ var handleTweetCreateFormSubmit = (event) => {
         }
         else if (xhr.status === 403) {
             alert("Please login");
-            window.location.href = "/account/login/";
+            window.location.href = "http://localhost/twitter/account/login/";
         }
     }
     xhr.onerror = () => {
@@ -82,7 +82,7 @@ var loadTweets = (tweetsElement, nextPage) => {
         }
     }
 
-    const url = `/api/tweets/feed/`;
+    const url = `http://localhost/twitter/api/tweets/feed/`;
     const responseType = 'json';
     xhr.responseType = responseType;
     xhr.open(method, url);
@@ -121,7 +121,7 @@ function getCookie(name) {
 }
 
 var handleTweetAction = (tweet_id, currentAmount, action) => {
-    const url = "/api/tweets/action/"
+    const url = "http://localhost/twitter/api/tweets/action/"
     const method = "POST"
     const data = JSON.stringify({
         id: tweet_id,
@@ -143,9 +143,9 @@ var handleTweetAction = (tweet_id, currentAmount, action) => {
 }
 
 var handleFollowAction = (profileUser, action) => {
-    const url = "/api/profiles/" + profileUser + "/follow/"
+    const url = "http://localhost/twitter/api/profiles/" + profileUser + "/follow/"
     const method = "POST"
-    // console.log(profileUser)
+    console.log(profileUser)
     const data = JSON.stringify({
         username: profileUser,
         action: action,

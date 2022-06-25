@@ -1,7 +1,7 @@
 username = document.getElementById('request-username').innerHTML
-
+console.log(username)
 async function fetchUser() {
-    let response = await fetch(`/api/profiles/${username}`)
+    let response = await fetch(`http://localhost/twitter/api/profiles/${username}`)
     // .then(response => response.json()
     // .then(username => response.username));
     let data = await response.json();
