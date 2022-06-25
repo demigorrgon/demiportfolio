@@ -12,7 +12,7 @@
 </template>
 <script>
 import PortfolioNavbar from "@/components/PortfolioNavbar.vue";
-import PortfolioFooter from "./components/PortfolioFooter.vue";
+import PortfolioFooter from "@/components/PortfolioFooter.vue";
 
 export default {
   components: { PortfolioNavbar, PortfolioFooter },

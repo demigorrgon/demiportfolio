@@ -185,7 +185,7 @@ import {
   getCategoriesByUser,
   getActionsByUser,
   createActionByUser,
-} from "../api/shortcuts";
+} from "../api/shortcuts.js";
 import { mapGetters, mapMutations } from "vuex";
 export default {
   components: {
