@@ -1,13 +1,13 @@
 version: '3.9'
 services:
-  nginx: 
+  nginx:
     build:
       context: .
       dockerfile: ./Dockerfile
     ports:
       - "80:80"
     volumes:
-      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf  
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
   el_shopperino_backend:
     image: el_shopperino_backend
     restart: unless-stopped
@@ -25,8 +25,11 @@ services:
     build:
       context: .
       dockerfile: ./docker/backend/ijra-Dockerfile
+    environment:
+      - FLASK_APP=run.py
     ports:
       - 8001:8001
+    entrypoint: ./flask-entrypoint.sh
     depends_on:
       - postgresdb
 
@@ -54,4 +57,5 @@ services:
 
 volumes:
   pgdata:
+
 
