@@ -12,7 +12,7 @@ load_dotenv()
 
 
 ma = Marshmallow()
-cors = CORS()
+cors = CORS(resources={r"*": {"origins": "http://localhost:8001"}})
 
 bcrypt = Bcrypt()
 db = SQLAlchemy()
@@ -29,7 +29,7 @@ def create_app(config_class=Config):
     migrate.init_app(app, db)
     jwt.init_app(app)
 
-    from ijra.app import ijra
+    from .app import ijra
 
     app.register_blueprint(ijra)
     return app

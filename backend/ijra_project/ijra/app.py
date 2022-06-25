@@ -1,10 +1,10 @@
 from . import jwt, db
-from ..models import (
+from .models import (
     AuthUser,
     Category,
     ToDoAction,
 )
-from ..serializers import (
+from .serializers import (
     user_schema,
     category_schema,
     categories_schema,
