@@ -8,6 +8,10 @@ services:
       - "80:80"
     volumes:
       - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - twitter_static:/usr/share/nginx/html/twitter/
+    depends_on:
+      - twitter-backend
+
   el_shopperino_backend:
     image: el_shopperino_backend
     restart: unless-stopped
@@ -33,12 +37,15 @@ services:
     depends_on:
       - postgresdb
 
-  twitter_backend:
+  twitter-backend:
     image: twitter_backend
     restart: unless-stopped
     build:
       context: .
       dockerfile: ./docker/backend/twitter-Dockerfile
+    volumes:
+      - ./backend/twitter_project/:/twitter/
+      - twitter_static:/twitter/static
     ports:
       - 8002:8002
     depends_on:
@@ -57,5 +64,6 @@ services:
 
 volumes:
   pgdata:
+  twitter_static:
 
 
