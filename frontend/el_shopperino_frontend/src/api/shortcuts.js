@@ -2,7 +2,7 @@ import axios from 'axios'
 
 // const ENDPOINT = "api/auth/";
 const httpClient = axios.create({
-    baseURL: "http://localhost:8000/",
+    baseURL: "http://localhost:8000/el_shopperino/",
     headers: {
         "Content-Type": "application/json",
     },
@@ -17,7 +17,7 @@ const obtainToken = (username, password) => {
 }
 
 const verifyToken = (token) => {
-    return httpClient.post('api/token/verify/', { token })
+    return httpClient.post('/api/token/verify/', { token })
 }
 
 const registerUser = (username, email, password, firstName, lastName) => {
@@ -45,7 +45,7 @@ const getCategoriesList = () => {
 }
 
 const sendVerificationEmail = (email, verification_code) => {
-    return httpClient.post('/api/v1/auth/send-mail/', { 'email': email, "link": 'http://localhost:8080/verify-email/' + verification_code })
+    return httpClient.post('/api/v1/auth/send-mail/', { 'email': email, "link": 'http://localhost/el_shopperino/verify-email/' + verification_code })
 }
 
 const verifyEmailCode = (uuid) => {
