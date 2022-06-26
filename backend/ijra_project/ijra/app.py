@@ -30,7 +30,7 @@ def user_lookup_callback(jwt_header, jwt_data):
     return AuthUser.query.filter_by(id=identity).one_or_none()
 
 
-@ijra.route("/api/v1/register", methods=["POST"])
+@ijra.route("/ijra/api/v1/register", methods=["POST"])
 def register():
     # some validation
     try:
@@ -48,7 +48,7 @@ def register():
         )
 
 
-@ijra.route("/api/v1/login", methods=["POST"])
+@ijra.route("/ijra/api/v1/login", methods=["POST"])
 def login():
     username = request.json.get("username", None)
     password = request.json.get("password", None)
@@ -62,7 +62,7 @@ def login():
     return jsonify(access_token=access_token)
 
 
-@ijra.route("/api/v1/categories", methods=["GET", "POST"])
+@ijra.route("/ijra/api/v1/categories", methods=["GET", "POST"])
 def create_category():
     if request.method == "GET":
         if request.args.get("user"):
@@ -79,7 +79,7 @@ def create_category():
     return category_schema.jsonify(new_category), 201
 
 
-@ijra.route("/api/v1/actions", methods=["GET", "POST", "PUT", "DELETE"])
+@ijra.route("/ijra/api/v1/actions", methods=["GET", "POST", "PUT", "DELETE"])
 def actions():
     if request.method == "GET":
         if request.args.get("user"):
@@ -147,7 +147,7 @@ def actions():
             return jsonify({"response": "Deleted successfully"}), 200
 
 
-@ijra.route("/api/v1/verify", methods=["POST"])
+@ijra.route("/ijra/api/v1/verify", methods=["POST"])
 def verify():
     token = request.headers.get("Authorization")
     decode_token(token.split(" ")[1])
