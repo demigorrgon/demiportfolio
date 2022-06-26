@@ -38,8 +38,8 @@
     </vs-card>
   </vs-col>
 </vs-row>
-    <vs-row vs-type=flex>
-      <vs-col vs-type="flex" class="container-action">
+    <vs-row vs-type=flex vs-justify="center">
+      <vs-col vs-type="flex" class="container-action" >
         
       <!-- <vs-col style="border: 1px solid black;" v-for="category in categories" :key="category.id"> -->
           <vs-col  vs-justify="center" style="border: 1px solid black;border-radius:15px;">
