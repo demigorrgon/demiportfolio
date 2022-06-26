@@ -45,7 +45,7 @@ const getCategoriesList = () => {
 }
 
 const sendVerificationEmail = (email, verification_code) => {
-    return httpClient.post('/api/v1/auth/send-mail/', { 'email': email, "link": 'http://localhost/el_shopperino/verify-email/' + verification_code })
+    return httpClient.post('/api/v1/auth/send-mail/', { 'email': email, "link": 'http://demigorrgon.design/el_shopperino/verify-email/' + verification_code })
 }
 
 const verifyEmailCode = (uuid) => {
