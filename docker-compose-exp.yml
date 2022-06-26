@@ -70,6 +70,6 @@ services:
 volumes:
   pgdata:
   twitter_static:
-  el_shopperino_images:
+  el-shopperino-images:
 
 
