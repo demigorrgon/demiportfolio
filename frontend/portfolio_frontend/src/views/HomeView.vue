@@ -28,6 +28,7 @@
       :featuresArray="[
         'REST API',
         'JWT authentication',
+        'Account activation upon email verification (c)Shakespear, probably',
         'Product cart',
         'Favorite products',
         'Ordering proccess',
