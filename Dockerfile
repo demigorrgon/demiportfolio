@@ -16,4 +16,7 @@ EXPOSE 80
 
 RUN mkdir /usr/share/nginx/html/twitter
 RUN chown root:root -R /usr/share/nginx/html/twitter/
+
+RUN mkdir /usr/share/nginx/html/images
+RUN chown root:root -R /usr/share/nginx/html/images/
 CMD ["nginx", "-g", "daemon off;"]
