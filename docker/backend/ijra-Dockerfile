@@ -24,5 +24,6 @@ RUN pip3 install gunicorn
 EXPOSE 8001
 # CMD ["gunicorn", "--bind", "0.0.0.0:8001", "app.run:app"]
 # CMD ["python3", "run.py"]
+# RUN chown root:root -R /home/app
 RUN chmod +x flask-entrypoint.sh
 ENTRYPOINT [ "/flask-entrypoint.sh" ]

@@ -19,6 +19,7 @@ services:
       context: .
       dockerfile: ./docker/backend/el_shopperino-Dockerfile
     # command: gunicorn el_shopperino_project.el_shopperino_core.wsgi --bind 0.0.0.0:8000 --workers=4 --threads 4
+
     ports:
       - 8000:8000
     depends_on:
@@ -29,6 +30,8 @@ services:
     build:
       context: .
       dockerfile: ./docker/backend/ijra-Dockerfile
+    # volumes:
+    #   - ./backend/ijra_project/:/app/
     environment:
       - FLASK_APP=run.py
     ports:
