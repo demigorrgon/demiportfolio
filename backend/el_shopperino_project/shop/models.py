@@ -35,7 +35,8 @@ class Product(models.Model):
         return self.name
 
     def save(self, *args, **kwargs):
-        print(self.image)
+        self.image = f"/media/images/{self.image}"
+        super().save()
 
 
 class CartItem(models.Model):
