@@ -2,7 +2,7 @@ import axios from 'axios'
 
 // const ENDPOINT = "api/auth/";
 const httpClient = axios.create({
-    baseURL: "http://demigorrgon.design:8000/el_shopperino/",
+    baseURL: "http://demigorrgon.design/el_shopperino/",
     headers: {
         "Content-Type": "application/json",
     },

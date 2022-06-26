@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const httpClient = axios.create({
-    baseURL: "http://demigorrgon.design:8001/ijra/",
+    baseURL: "http://demigorrgon.design/ijra/",
     headers: {
         "Content-Type": "application/json",
     },
