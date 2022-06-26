@@ -58,7 +58,11 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "twitter_clone.urls"
 
-CSRF_TRUSTED_ORIGINS = ["http://localhost", "https://*.127.0.0.1"]
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost",
+    "https://*.127.0.0.1",
+    "http://demigorrgon.design/*",
+]
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
