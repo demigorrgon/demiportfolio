@@ -15,7 +15,7 @@ urlpatterns = [
         "el_shopperino/",
         include(
             [
-                path("admin/", admin.site.urls),
+                path("api/admin/", admin.site.urls),
                 path(
                     "api/token/",
                     TokenObtainUsernameView.as_view(),
