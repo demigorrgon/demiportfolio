@@ -25,7 +25,7 @@ services:
     depends_on:
       - postgresdb
 
-  ijra_backend:
+  ijra-backend:
     image: ijra_backend
     build:
       context: .
