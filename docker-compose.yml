@@ -9,7 +9,7 @@ services:
     volumes:
       - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
       - twitter_static:/usr/share/nginx/html/twitter/
-      - el-shopperino-images:/usr/share/nginx/html/images/
+      # - el-shopperino-images:/usr/share/nginx/html/images/
     depends_on:
       - twitter-backend
 
@@ -20,8 +20,8 @@ services:
       context: .
       dockerfile: ./docker/backend/el_shopperino-Dockerfile
     # command: gunicorn el_shopperino_project.el_shopperino_core.wsgi --bind 0.0.0.0:8000 --workers=4 --threads 4
-    volumes:
-      - el-shopperino-images:/app/media/images
+    # volumes:
+    #   - el-shopperino-images:/app/media/images
     ports:
       - 8000:8000
     depends_on:
@@ -70,6 +70,6 @@ services:
 volumes:
   pgdata:
   twitter_static:
-  el-shopperino-images:
+    # el-shopperino-images:
 
 
