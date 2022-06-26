@@ -21,7 +21,7 @@ services:
       dockerfile: ./docker/backend/el_shopperino-Dockerfile
     # command: gunicorn el_shopperino_project.el_shopperino_core.wsgi --bind 0.0.0.0:8000 --workers=4 --threads 4
     volumes:
-      - /backend/el_shopperino_project:/app
+      - ./backend/el_shopperino_project:/app
       - el-shopperino-images:/app/media/images
     ports:
       - 8000:8000
