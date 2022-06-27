@@ -36,7 +36,9 @@ class Product(models.Model):
         return self.name
 
     def save(self, *args, **kwargs) -> None:
-        self.image_link = self.image.url
+        self.image_link = (
+            f"http://demigorrgon.design/media/images/{self.image.path.split('/')[-1]}"
+        )
         super().save()
 
 
