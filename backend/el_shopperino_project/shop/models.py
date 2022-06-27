@@ -1,4 +1,3 @@
-from distutils.command.upload import upload
 from django.db import models
 
 from authapp.models import CustomUser
@@ -25,6 +24,7 @@ class Product(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     image = models.ImageField(upload_to="images/")
+    image_link = models.URLField()
     slug = models.SlugField(max_length=100, unique=True)
     in_stock = models.BooleanField(default=True)
     is_active = models.BooleanField(default=True)
@@ -34,6 +34,10 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+    def save(self, *args, **kwargs) -> None:
+        self.image_link = self.image.url
+        super().save()
 
 
 class CartItem(models.Model):
