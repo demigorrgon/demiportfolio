@@ -29,7 +29,7 @@ class Product(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    image = DemiDesignImagePath(upload_to="images/")
+    image = DemiDesignImagePath(upload_to=f"{DemiDesignImagePath.url}")
     slug = models.SlugField(max_length=100, unique=True)
     in_stock = models.BooleanField(default=True)
     is_active = models.BooleanField(default=True)
