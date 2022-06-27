@@ -19,6 +19,10 @@ class DemiDesignImagePath(models.ImageField):
         return f"http://demigorrgon.design/{self.name}"
 
 
+def send_to_domain(instance, filename):
+    return f"http://demigorrgon.design/media/images/{filename}"
+
+
 class Product(models.Model):
     category = models.ForeignKey(
         Category, related_name="product", on_delete=models.CASCADE
@@ -29,7 +33,7 @@ class Product(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    image = DemiDesignImagePath(upload_to=f"{DemiDesignImagePath.url}")
+    image = DemiDesignImagePath(upload_to=send_to_domain)
     slug = models.SlugField(max_length=100, unique=True)
     in_stock = models.BooleanField(default=True)
     is_active = models.BooleanField(default=True)
