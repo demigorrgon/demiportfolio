@@ -3,7 +3,7 @@
     <vs-row vs-type="flex" class="main-row-wrapper">
       <vs-col vs-w="5" vs-offset="1" class="">
         <!-- <div class="image-part"> -->
-        <img :src="pageData.image" class="product-pic" />
+        <img :src="pageData.image_link" class="product-pic" />
         <!-- </div> -->
       </vs-col>
       <vs-col vs-w="5" class="description-part" style="margin-left: 50px">

@@ -24,7 +24,7 @@ class Product(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     image = models.ImageField(upload_to="images/")
-    image_link = models.URLField()
+    image_link = models.URLField(blank=True)
     slug = models.SlugField(max_length=100, unique=True)
     in_stock = models.BooleanField(default=True)
     is_active = models.BooleanField(default=True)

@@ -23,6 +23,7 @@ class ProductSerializer(serializers.ModelSerializer):
             "updated_at",
             "price",
             "image",
+            "image_link",
             "slug",
             "in_stock",
             "category",
