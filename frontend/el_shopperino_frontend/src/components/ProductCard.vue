@@ -1,6 +1,6 @@
 <template>
   <div class="product-card">
-    <img class="product-pic" :src="product.image" />
+    <img class="product-pic" :src="product.image_link" />
     <br />
     <h2>
       <router-link :to="'/product/' + product.slug">
