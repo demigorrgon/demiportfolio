@@ -10,6 +10,7 @@
           >
         </p>
         <p class="rights">All rights reserved ©</p>
+        <p class="rights">yo, just in case, if I'd be a art/ui designer, the world would be such a miserable place, it's just a free domain by <a href="https://porkbun.com" target="_blank">porkbun.com</a></p>
       </vs-col>
       <vs-col
         class="info-wrapper"
