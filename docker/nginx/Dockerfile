@@ -1,38 +1,22 @@
-FROM node:lts-alpine as builder
+FROM demigorrgon/demiportfolio-frontend as builder
 
-WORKDIR /app/portfolio
-COPY frontend/portfolio_frontend/package*.json ./
-RUN npm install
-COPY frontend/portfolio_frontend/ .
-RUN npm run build
+FROM nginx:alpine
+WORKDIR /usr/share/nginx/html/portfolio
+RUN rm -rf ./*
+COPY --from=builder /app/portfolio/dist .
 
-WORKDIR /app/el_shopperino
-COPY frontend/el_shopperino_frontend/package*.json ./
-RUN npm install
-COPY frontend/el_shopperino_frontend/ .
-RUN npm run build
-# CMD ["npm", "run", "serve"]
-# EXPOSE 8080
+WORKDIR /usr/share/nginx/html/ijra
+RUN rm -rf ./*
+COPY --from=builder /app/ijra/dist .
 
+WORKDIR /usr/share/nginx/html/el_shopperino
+RUN rm -rf ./*
+COPY --from=builder /app/el_shopperino/dist .
+EXPOSE 80
 
-WORKDIR /app/ijra
-COPY frontend/frontend-ijra/package*.json ./
-RUN npm install
-COPY frontend/frontend-ijra/ .
-RUN npm run build
+RUN mkdir /usr/share/nginx/html/twitter
+RUN chown root:root -R /usr/share/nginx/html/twitter/
 
-# FROM nginx:alpine
-# WORKDIR /usr/share/nginx/html/portfolio
-# RUN rm -rf ./*
-# COPY --from=builder /app/portfolio/dist .
-
-
-# WORKDIR /usr/share/nginx/html/ijra
-# RUN rm -rf ./*
-# COPY --from=builder /app/ijra/dist .
-
-# WORKDIR /usr/share/nginx/html/el_shopperino
-# RUN rm -rf ./*
-# COPY --from=builder /app/el_shopperino/dist .
-# EXPOSE 80
-# CMD ["nginx", "-g", "daemon off;"]
+RUN mkdir /usr/share/nginx/html/images
+RUN chown root:root -R /usr/share/nginx/html/images/
+CMD ["nginx", "-g", "daemon off;"]
