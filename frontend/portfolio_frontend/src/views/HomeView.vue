@@ -55,7 +55,7 @@
     <project-item
       title="Twitter clone"
       techStackUsed="Backend: Django/Django Rest Framework, sqlite. Frontend: VanillaJS."
-      description="One of the first projects ever done with DRF. Frontend in this project needs some love (refactoring with frameworks)"
+      description="One of the first projects ever done with DRF and JS/Bootstrap. Frontend in this project needs some love (refactoring with frameworks)"
       pictureName="twitter.png"
       endpoint="twitter"
       githubLink="https://github.com/demigorrgon/twitter_clone_django"
