@@ -65,18 +65,28 @@
           <p>Summary</p>
           <hr />
           <p class="a-lot-of-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
-            consectetur numquam at eius blanditiis! Repellat ratione optio
-            dolorem rem ullam ex ipsam laudantium ea corporis. Veritatis aliquam
-            obcaecati beatae magni odit. Repellendus blanditiis voluptatem
-            veritatis ea doloribus sapiente quos illum nulla molestiae
-            assumenda, nisi veniam ipsam saepe quisquam molestias voluptatibus
-            enim quidem impedit quae magnam corporis. Nam, animi tempore? Magni
-            delectus a dolores obcaecati temporibus, praesentium voluptate
-            tempora odio voluptas deserunt ipsum labore, dolorem nisi odit
-            voluptatum asperiores maxime! Incidunt numquam vel similique ducimus
-            molestiae sapiente laborum aliquid vitae maxime nesciunt cupiditate
-            maiores aut eaque quia necessitatibus, quos soluta?
+            Self-taught Python developer with passion to build services for
+            humans. Most comfortable with Django/DRF/Flask frameworks, using
+            PostgreSQL as default DB at almost all times, usually in Docker
+            containers to simplify switching process between dev/test/prod
+            environments of different projects. Certified expert in hiding external API keys and other configs in .env file and forgetting that your teammates might also need them
+            <br>
+            <br>
+            Willing to switch to any NoSQL DB in case of need.
+            <br>
+            <br>
+            This website was deployed with great help of docker-compose, nginx image in Docker and AWS EC2 service.
+            <br>
+            <br>
+            Usually unittesting stuff with pytest. It's just great.
+            <br>
+            <br>
+            Sometimes doing JS(VueJS specifically) stuff for fun, it does give
+            some vibe of "I'm typing a lot of relatively meaningless code so I
+            definitely look like 1337hackerman"
+            <br>
+            <br>
+            Fueled by memes, videos, streams and bunch of Spotify playlists
           </p>
 
           <p>Languages</p>
@@ -99,22 +109,46 @@
             EPAM University Program Python Autumn 2020: October 2020 - December
             2020 - terminated due to major health issues.
             <br />
+            <p class="prog">Notable progress during the internship:</p>
+            <p class="what-learned">- First expirience in developing REST APIs with Flask. Sadly, had to withdraw due to multiple surgeries and quite a long recovery period.</p>
+
           </p>
           <p class="a-lot-of-text">
-            Smarttek Academy Python Web Development: February 2022 - April 2022
-            - program terminated due to russian invasion of Ukraine. <br />
+            <a href="https://dou.ua/calendar/42418/" target="_blank"
+              >Smarttek Academy Python Web Development</a
+            >
+            - Unpaid Internship: February 2022 - April 2022 - program terminated
+            due to russian invasion of Ukraine. <br />
+            <p class="prog">Notable progress during the internship:</p>
+            <p class="what-learned">- Was initially appointed into a group of ppl who'd be going into paid intership program, but litterally next day after the interview mr.putin decided to liberate me from my first money made as dev /shrug</p>
+            <p class="what-learned">- Was leading a team of 4 devs in SCRUM environment, that shifted a bit into KANBAN and became a mix of both, really </p>
+            <p class="what-learned">- Aforementioned project was an DRF/Vue thematic freelance board dedicated to find freelance people with knowledge and skills in building homes/bridges/roads etc. As ironic as it might sound, development of it died after the announcement of the pause in the internship</p>
+            <p class="what-learned">- In general, it was a first expirience in working as a team, actually testing stuff with unittests, understanding how much pain setting up Gitlab CI is/was. And a lot of other fancy stuff. </p>
+
           </p>
           <p class="a-lot-of-text">
-            Coxit Academy Python: May 2022 - current
+            <a href="https://dou.ua/calendar/42123/">Coxit Academy Python</a> -
+            Unpaid Internship: May 2022 - current
+            <p class="prog">Progress during the internship:</p>
+            <p class="what-learned">- <a href="" target="_blank">IJRA</a> was initially a task of 'yo, create some CRUD API' which went a bit too south</p>
+            <p class="what-learned">- Was responsible for implementing somewhat of a frontend for an internal application, that was using Slack API and it's Block Kit in Django application, which was a frontend app. Don't ask me why.</p>
+            <p class="what-learned">- Learned about API mocking in tests (on top of basic unittests), which actually helped quite a bit in testing that awful Slack's API. Trust me, it <i>really</i> is.</p>
+            <p class="what-learned">- Those sick bastards led me into using Ubuntu(Linux) as main OS.<br> <b>/s</b> just in case</i>.</p>
             <br />
           </p>
           <p class="a-lot-of-text">
-            Smarttek Academy Python Web Development: June 2022 - current <br />
+            <a href="https://dou.ua/calendar/42418/" target="_blank"
+              >Smarttek Academy Python Web Development</a
+            >
+            - Unpaid Internship: June 2022 - current <br />
             - program continued and goes in parallel with Coxit Academy
             <br />
+            <p class="prog">Notable progress during the internship:</p>
+            <p class="what-learned">- Was participating in <a href="http://hariart.org/" target="_blank">Hariart</a> project. Added celery worker for delayed emails sending.</p>
+            <p class="what-learned">- Cleaned up dockerizing process in aforementioned project, learned about image hashing, reminded myself how to scrape pictures from websites in legal way.</p>
           </p>
 
-          <p>Tech stack/Portfolio:</p>
+          <p style="margin-top:30px">Tech stack/Portfolio:</p>
           <hr />
           <p>
             <vs-row>
@@ -212,5 +246,12 @@ ul {
 .external-links a {
   text-decoration: none;
   color: brown;
+}
+.prog {
+  padding-left: 5px;
+}
+.what-learned {
+  padding-left: 30px;
+  font-weight: 300 !important;
 }
 </style>
