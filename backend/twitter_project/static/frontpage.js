@@ -41,7 +41,7 @@ var handleTweetCreateFormSubmit = (event) => {
         }
         else if (xhr.status === 403) {
             alert("Please login");
-            window.location.href = "http://localhost/twitter/account/login/";
+            window.location.href = "http://demigorrgon.design/twitter/account/login/";
         }
     }
     xhr.onerror = () => {
@@ -121,7 +121,7 @@ function getCookie(name) {
 }
 
 var handleTweetAction = (tweet_id, currentAmount, action) => {
-    const url = "http://localhost/twitter/api/tweets/action/"
+    const url = "http://demigorrgon.design/twitter/api/tweets/action/"
     const method = "POST"
     const data = JSON.stringify({
         id: tweet_id,
@@ -143,7 +143,7 @@ var handleTweetAction = (tweet_id, currentAmount, action) => {
 }
 
 var handleFollowAction = (profileUser, action) => {
-    const url = "http://localhost/twitter/api/profiles/" + profileUser + "/follow/"
+    const url = "http://demigorrgon.design/twitter/api/profiles/" + profileUser + "/follow/"
     const method = "POST"
     console.log(profileUser)
     const data = JSON.stringify({
