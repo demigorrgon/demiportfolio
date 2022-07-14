@@ -21,6 +21,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN pip3 install --upgrade pip 
 RUN pip3 install -r requirements.txt
 RUN pip3 install gunicorn
+RUN python3 manage.py collectstatic
 EXPOSE 8002
 # CMD ["gunicorn", "--bind", "0.0.0.0:8002", "twitter_clone.wsgi"]
 CMD ["python3", "manage.py", "runserver", "0.0.0.0:8002"]
