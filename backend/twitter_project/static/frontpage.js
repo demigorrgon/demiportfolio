@@ -82,7 +82,7 @@ var loadTweets = (tweetsElement, nextPage) => {
         }
     }
 
-    const url = `http://localhost/twitter/api/tweets/feed/`;
+    const url = `http://demigorrgon.design/twitter/api/tweets/feed/`;
     const responseType = 'json';
     xhr.responseType = responseType;
     xhr.open(method, url);
