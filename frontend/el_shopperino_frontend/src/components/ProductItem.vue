@@ -17,9 +17,9 @@
         vs-type="flex"
         vs-align="flex-start"
         vs-justify="flex-start"
-        vs-w="9"
+        vs-w="10"
         vs-offset="2"
-        style="border: 1px solid gray"
+        style="flex-flow: wrap"
       >
         <vs-col
           vs-type="flex"
@@ -38,9 +38,9 @@
         vs-type="flex"
         vs-align="flex-start"
         vs-justify="flex-start"
-        vs-w="9"
+        vs-w="10"
         vs-offset="2"
-        style="border: 1px solid gray"
+        style="flex-flow: wrap"
       >
         <vs-col
           vs-type="flex"
