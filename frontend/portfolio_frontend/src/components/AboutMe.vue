@@ -18,8 +18,7 @@
         <p>I'm Valentyn Slivko aka demigorrgon</p>
         <p>
           Python backend development enjoyer (Django/DRF, Flask).<br />
-          Working my way to become a python's backend holy trinity wielder (add
-          FastAPI to the list of frameworks that I'm comfortable with)
+
           <br />
           Occasionally doing frontend stuff with VueJS. <br />Most of the time
           creating REST APIs and web services<br />
@@ -27,7 +26,7 @@
           <br />
           <br />
 
-          Seeking new opportunities as a dev and human being.
+          Seeking new opportunities as a professional dev and human being.
         </p>
         <p style="margin-bottom: 1px">Get in touch/Grab my CV:</p>
         <vs-button

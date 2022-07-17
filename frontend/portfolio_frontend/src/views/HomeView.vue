@@ -28,19 +28,17 @@
       :featuresArray="[
         'REST API',
         'JWT authentication',
-        'Account activation upon email verification (c)Shakespear, probably',
+        'Account activation upon email verification (c) Shakespear, probably',
         'Product cart',
         'Favorite products',
         'Ordering proccess',
-        'Permission based product creation (like a worker)',
-        'TODO: add a map on frontend where user can pick a location where he wants the stuff to be delivered to',
       ]"
     />
 
     <project-item
       title="IJRA"
       techStackUsed="Backend: Vanilla Flask, PostgreSQL. Frontend: VueJS, Vuex. Styling: Vuesax 3. Containerized with Docker"
-      description="Totally not a copy of JIRA. Heavily inspired by ifuckinghatejira.com to make someone's life miserable"
+      description="Totally not a copy of JIRA. Heavily inspired by ifuckinghatejira.com to make someone's life miserable by design"
       pictureName="ijra.jpg"
       endpoint="ijra"
       githubLink="https://github.com/demigorrgon/ijra"
@@ -60,7 +58,7 @@
       endpoint="twitter"
       githubLink="https://github.com/demigorrgon/twitter_clone_django"
       :featuresArray="[
-        'REST API',
+        'Mix of REST API and django templates',
         'Session authentication',
         'All the usual twitter stuff:',
         'Likes, tweets, retweets, followers',
