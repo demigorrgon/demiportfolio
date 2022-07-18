@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ContactView from '../views/ContactView.vue'
+import RoadmapView from '../views/RoadmapView.vue'
 
 
 Vue.use(VueRouter)
@@ -16,6 +17,12 @@ const routes = [
     path: '/contact',
     name: 'contact',
     component: ContactView
+  },
+  {
+
+    path: '/roadmap',
+    name: 'roadmap',
+    component: RoadmapView
   },
 ]
 

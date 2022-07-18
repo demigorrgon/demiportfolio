@@ -102,12 +102,11 @@
             <a class="profile-links" href="https://dou.ua/calendar/42418/" target="_blank"
               >Smarttek Academy Python Web Development</a
             >
-            - Unpaid Internship: February 2022 - April 2022 - program terminated
-            due to russian invasion of Ukraine. <br />
+            - Unpaid Internship: February 2022 - May 2022 <br />
             <p class="prog">Notable progress during the internship:</p>
             <p class="what-learned">- Was initially appointed into a group of ppl who'd be going into paid intership program, but litterally next day after the interview mr.putin decided to liberate me from my first money made as dev /shrug</p>
-            <p class="what-learned">- Was leading a team of 4 devs in SCRUM environment, that shifted a bit into KANBAN and became a mix of both, really </p>
-            <p class="what-learned">- Aforementioned project was an DRF/Vue thematic freelance board dedicated to find freelance people with knowledge and skills in building homes/bridges/roads etc. As ironic as it might sound, development of it died after the announcement of the pause in the internship because of the war</p>
+            <p class="what-learned">- Was working in a team of 4 devs in SCRUM environment, that shifted a bit into KANBAN and became a mix of both </p>
+            <p class="what-learned">- Aforementioned project was an DRF/Vue thematic freelance board dedicated to find freelance people with knowledge and skills in building homes/bridges/roads etc.</p>
             <p class="what-learned">- In general, it was a first experience in working as a team, actually unittesting code, planning and communicating through issues. </p>
             <p class="what-learned">- Was responsible for building a chat app with the help of <a class="profile-links" href="https://channels.readthedocs.io/en/stable/" target="_blank">django-channels</a>; CI pipeline setup in Gitlab and other usual stuff</p>
 
@@ -116,7 +115,7 @@
           <hr style="opacity: 0.2">
           <p class="a-lot-of-text">
             <a class="profile-links" href="https://dou.ua/calendar/42123/">Coxit Academy Python</a> -
-            Unpaid Internship: May 2022 - current
+            Unpaid Internship: April 2022 - End of May 2022
             <p class="prog">Notable progress during the internship:</p>
             <p class="what-learned">- <a class="profile-links" href="http://demigorrgon.design/ijra/" target="_blank">IJRA</a> was initially a task of 'yo, create some CRUD API' which went a bit too south</p>
             <p class="what-learned">- Was responsible for implementing somewhat of a frontend for an internal application, that was using Slack API and it's Block Kit in Django application, which was a frontend app. Don't ask me why.</p>
@@ -126,16 +125,11 @@
           </p>
           <hr style="opacity: 0.2">
           <p class="a-lot-of-text">
-            <a class="profile-links" href="https://dou.ua/calendar/42418/" target="_blank"
-              >Smarttek Academy Python Web Development</a
-            >
-            - Unpaid Internship: June 2022 - current <br />
-            - program continued and goes in parallel with Coxit Academy
-            <br />
-            <p class="prog">Notable progress during the internship:</p>
-            <p class="what-learned">- Was participating in <a class="profile-links" href="http://hariart.org/" target="_blank">Hariart</a> project's development.</p> 
-            <p class="what-learned">&emsp;- Was responsible for adding <a class="profile-links" href="https://docs.celeryq.dev/en/stable/" target="_blank">celery</a> worker for delayed emails sending.</p>
-            <p class="what-learned">&emsp;- Cleaned up dockerizing process in aforementioned project, learned about image hashing, reminded myself how to scrape pictures from websites in legal way.</p>
+            Junior Python/Django dev at Smarttek: June 2022 - current</p>
+          
+            <p class="what-learned">- Participating in development of <a class="profile-links" href="http://hariart.org/" target="_blank">Hariart</a> (non-NDA) project's development.</p> 
+            <p class="what-learned">&emsp;- Developing backend logic, added <a class="profile-links" href="https://docs.celeryq.dev/en/stable/" target="_blank">celery</a> worker for delayed emails sending to the project.</p>
+            <p class="what-learned">&emsp;- Cleaned up dockerizing process, learned about image hashing, reminded myself how to scrape pictures from websites (internal website with a list of pictures) in a legal way.</p>
           </p>
 
           <p style="margin-top:30px">Tech stack:</p>
