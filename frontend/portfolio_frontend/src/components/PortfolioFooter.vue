@@ -10,7 +10,7 @@
           >
         </p>
         <p class="rights">All rights reserved ©</p>
-        <p class="rights">yo, just in case, if I'd be a art/ui designer, the world would be such a miserable place, it's just a free domain by <a href="https://porkbun.com" target="_blank">porkbun.com</a></p>
+        <p class="rights">yo, just in case, it's just a free domain by <a href="https://porkbun.com" target="_blank">porkbun.com</a></p>
       </vs-col>
       <vs-col
         class="info-wrapper"
@@ -26,14 +26,12 @@
             >
             <p class="repo-description">
               Portfolio is written in
-              <a href="https://docs.djangoproject.com/en/3.2/">Django</a>/<a
-                href="https://www.django-rest-framework.org/"
-                >DRF</a
-              >, <a href="https://v2.vuejs.org/">VueJS</a>,
+               <a href="https://v2.vuejs.org/">VueJS</a>,
               <a
                 href="https://vuesax.com/docs/guide/gettingStarted.html#installation"
-                >Vuesax 4</a
+                >Vuesax 4,</a
               >
+              <br>hosted and deployed with: <a class="profile-links" href="https://aws.amazon.com/ec2/">AWS EC2</a>, nginx, Docker containers
             </p>
           </vs-col>
           <vs-col w="2" offset="2"

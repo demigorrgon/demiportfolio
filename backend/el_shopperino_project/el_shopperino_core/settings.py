@@ -93,10 +93,10 @@ DATABASES = {
     # }
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "el_shopperinodb",
+        "NAME": "el-shopperinodb",
         "USER": os.getenv("POSTGRES_USER"),
         "PASSWORD": os.getenv("POSTGRES_PASSWORD"),
-        "HOST": "postgresdb",
+        "HOST": "localhost",
         "PORT": "5432",
     }
 }
@@ -205,6 +205,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://demigorrgon.design:80",
     "http://localhost:80",
     "http://localhost",
+    "http://127.0.0.1:8081",
+    "http://localhost:8081",
 ]
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"

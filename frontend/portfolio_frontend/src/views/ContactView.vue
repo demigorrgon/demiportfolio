@@ -48,7 +48,7 @@
             </vs-row>
             <vs-col style="margin-top: 15px">
               <vs-button warn gradient style="margin: 0 auto">
-                Export as pdf
+                <a :href="`${publicPath}cv_slivko_python.pdf`" download="cv_slivko_python.pdf" style="text-decoration:none;color:white">Download pdf</a>
               </vs-button>
             </vs-col>
           </vs-col>
@@ -65,7 +65,7 @@
           <p>Profile</p>
           <hr />
           <p class="a-lot-of-text">
-            &emsp;Self-taught back-end developer with passion to build services for humans, with more than a year of experience using Python and it's rich infrastructure 
+            &emsp;Self-taught back-end developer with passion to build services for humans, with more than a year of experience working with Python and it's rich infrastructure. <br>Looking for an opportunity to grow as professional developer. 
             <br>
             &emsp;Washed up candidate master in chess.
             <br>
@@ -106,8 +106,8 @@
             due to russian invasion of Ukraine. <br />
             <p class="prog">Notable progress during the internship:</p>
             <p class="what-learned">- Was initially appointed into a group of ppl who'd be going into paid intership program, but litterally next day after the interview mr.putin decided to liberate me from my first money made as dev /shrug</p>
-            <p class="what-learned">- Was leading a team of 4 devs in SCRUM environment, that shifted a bit into KANBAN and became a mix of both, really </p>
-            <p class="what-learned">- Aforementioned project was an DRF/Vue thematic freelance board dedicated to find freelance people with knowledge and skills in building homes/bridges/roads etc. As ironic as it might sound, development of it died after the announcement of the pause in the internship because of the war</p>
+            <p class="what-learned">- Was leading a team of 4 devs in SCRUM environment, that shifted a bit into KANBAN and became a mix of both </p>
+            <p class="what-learned">- Aforementioned project was an DRF/Vue thematic freelance board dedicated to finding freelance people with knowledge and skills in building homes/bridges/roads etc. As ironic as it might sound, development of it died after the announcement of the pause in the internship because of the war</p>
             <p class="what-learned">- In general, it was a first experience in working as a team, actually unittesting code, planning and communicating through issues. </p>
             <p class="what-learned">- Was responsible for building a chat app with the help of <a class="profile-links" href="https://channels.readthedocs.io/en/stable/" target="_blank">django-channels</a>; CI pipeline setup in Gitlab and other usual stuff</p>
 
@@ -157,6 +157,7 @@
               <vs-col><p class="what-learned">- DRF test client/factory for API testing</p></vs-col>
               <vs-col><p class="what-learned">- Postman (manual)</p></vs-col>
               <vs-col><p >DevOps related:</p></vs-col>
+              <vs-col><p class="what-learned">- Git</p></vs-col>
               <vs-col><p class="what-learned">- Docker/docker-compose</p></vs-col>
               <vs-col><p class="what-learned">- nginx as a docker-compose service, basic configs etc</p></vs-col>
               <vs-col><p class="what-learned">- Github Actions/Gitlab runner setups </p></vs-col>
@@ -164,6 +165,12 @@
               <vs-col><p class="what-learned">- Basic ES5/ES6 Javascript syntax, axios</p></vs-col>
               <vs-col><p class="what-learned">- Basic vuejs (lifecycle hooks, 'v-' keywords)</p></vs-col>
               <vs-col><p class="what-learned">- HTML5, vuetify, vuesax styling frameworks</p></vs-col>
+              <vs-col><p >3rd party services:</p></vs-col>
+              <vs-col><p class="what-learned">- AWS EC2</p></vs-col>
+              <vs-col><p class="what-learned">- Slack API</p></vs-col>
+              <vs-col><p class="what-learned">- Telegram API</p></vs-col>
+              <vs-col><p class="what-learned">- Email integrations (through API): SendGrid, MailJet</p></vs-col>
+              <vs-col><p class="what-learned">- Independent SMTP server setup (provided by <a class="profile-links" href="http://porkbun.com">porkbun.com</a>)</p></vs-col>
             </vs-row>
           </p>
           <p>Education:</p>
@@ -192,7 +199,13 @@ integrated technologies, 2021-current. Main technologies used: MATLAB, Simulink<
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      publicPath: process.env.BASE_URL,
+    };
+  },
+};
 </script>
 
 <style>
